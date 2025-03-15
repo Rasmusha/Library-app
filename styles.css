@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Charm', sans-serif;
+}
+body {
+    background-color: #f4fcde;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+h1 {
+    padding: 30px;
+    color: #5D8736;
+    font-size: 2.5rem;
+}
+
+button {
+    background-color: #5D8736;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#new-book {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #809D3C;
+}
+
+#library-container {
+    padding: 2rem;
+    display: grid;
+    width: 100%;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
+}
+
+.book-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #A9C46C;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card button {
+    width: 25%;
+    height: 25%;
+}
+
+.form-popup {
+    display: none;
+    position: relative;
+    margin-bottom: 20px; /* Add space below the form */
+    border: 3px solid #f1f1f1;
+    background-color: #A9C46C;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input,
+.form-container button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.form-container button {
+    background-color: #5D8736;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #809D3C;
+}
+
+#cancelButton {
+    background-color: #5D8736;
+}
+
+#cancelButton:hover {
+    background-color: #809D3C;
+}

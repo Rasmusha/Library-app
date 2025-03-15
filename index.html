@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>My Book Library</h1>
+        <button id="new-book">New Book</button>
+        <div class="form-popup" id="popUpForm">
+            <form action="/my-handling-form-page" class="form-container">
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="author" placeholder="Author">
+            <input type="text" id="pages" placeholder="Pages">
+            <input type="text" id="title" placeholder="Title">
+            <label for="readOption"> 
+                Have you read it?
+                <input type="checkbox" id="readOption" name="readOption">
+            </label>
+            <button id="submitButton" type="submit">Submit</button>
+            <button id="cancelButton">Cancel</button>
+            </form>
+        </div>
+        <div id="library-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
